@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		744FCF7221492996004A0CBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744FCF7121492996004A0CBA /* UIKit.framework */; };
+		744FCF7421492996004A0CBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744FCF7321492996004A0CBA /* Foundation.framework */; };
+		744FCF7621492996004A0CBA /* CydiaSubstrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744FCF7521492996004A0CBA /* CydiaSubstrate.framework */; };
+		744FCF7F21492997004A0CBA /* WifiTweak.mm in Sources */ = {isa = PBXBuildFile; fileRef = 744FCF7E21492997004A0CBA /* WifiTweak.mm */; };
+		744FCF8A21493138004A0CBA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744FCF8921493137004A0CBA /* SystemConfiguration.framework */; };
+		744FCF8C21493273004A0CBA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 744FCF8B21493272004A0CBA /* Reachability.m */; };
+		744FCF8E2149327A004A0CBA /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 744FCF8D2149327A004A0CBA /* Reachability.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		744FCF6E21492996004A0CBA /* WifiTweak.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = WifiTweak.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		744FCF7121492996004A0CBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		744FCF7321492996004A0CBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		744FCF7521492996004A0CBA /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CydiaSubstrate.framework; path = Library/Frameworks/CydiaSubstrate.framework; sourceTree = DEVELOPER_DIR; };
+		744FCF7A21492997004A0CBA /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		744FCF7C21492997004A0CBA /* WifiTweak-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WifiTweak-Prefix.pch"; sourceTree = "<group>"; };
+		744FCF7D21492997004A0CBA /* WifiTweak.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = WifiTweak.xm; sourceTree = "<group>"; };
+		744FCF7E21492997004A0CBA /* WifiTweak.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WifiTweak.mm; sourceTree = "<group>"; };
+		744FCF8321492997004A0CBA /* WifiTweak.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = WifiTweak.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/WifiTweak.plist; sourceTree = "<group>"; };
+		744FCF8921493137004A0CBA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		744FCF8B21493272004A0CBA /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		744FCF8D2149327A004A0CBA /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		744FCF6A21492996004A0CBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				744FCF8A21493138004A0CBA /* SystemConfiguration.framework in Frameworks */,
+				744FCF7221492996004A0CBA /* UIKit.framework in Frameworks */,
+				744FCF7421492996004A0CBA /* Foundation.framework in Frameworks */,
+				744FCF7621492996004A0CBA /* CydiaSubstrate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		744FCF6321492996004A0CBA = {
+			isa = PBXGroup;
+			children = (
+				744FCF7721492996004A0CBA /* WifiTweak */,
+				744FCF7021492996004A0CBA /* Frameworks */,
+				744FCF6F21492996004A0CBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		744FCF6F21492996004A0CBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				744FCF6E21492996004A0CBA /* WifiTweak.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		744FCF7021492996004A0CBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				744FCF8921493137004A0CBA /* SystemConfiguration.framework */,
+				744FCF7121492996004A0CBA /* UIKit.framework */,
+				744FCF7321492996004A0CBA /* Foundation.framework */,
+				744FCF7521492996004A0CBA /* CydiaSubstrate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		744FCF7721492996004A0CBA /* WifiTweak */ = {
+			isa = PBXGroup;
+			children = (
+				744FCF8D2149327A004A0CBA /* Reachability.h */,
+				744FCF8B21493272004A0CBA /* Reachability.m */,
+				744FCF7D21492997004A0CBA /* WifiTweak.xm */,
+				744FCF7E21492997004A0CBA /* WifiTweak.mm */,
+				744FCF7821492997004A0CBA /* Package */,
+				744FCF7B21492997004A0CBA /* Supporting Files */,
+			);
+			path = WifiTweak;
+			sourceTree = "<group>";
+		};
+		744FCF7821492997004A0CBA /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				744FCF7921492997004A0CBA /* DEBIAN */,
+				744FCF8021492997004A0CBA /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		744FCF7921492997004A0CBA /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				744FCF7A21492997004A0CBA /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		744FCF7B21492997004A0CBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				744FCF7C21492997004A0CBA /* WifiTweak-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		744FCF8021492997004A0CBA /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				744FCF8121492997004A0CBA /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		744FCF8121492997004A0CBA /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				744FCF8221492997004A0CBA /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		744FCF8221492997004A0CBA /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				744FCF8321492997004A0CBA /* WifiTweak.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		744FCF6B21492996004A0CBA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				744FCF8E2149327A004A0CBA /* Reachability.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		744FCF6D21492996004A0CBA /* WifiTweak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 744FCF8621492997004A0CBA /* Build configuration list for PBXNativeTarget "WifiTweak" */;
+			buildPhases = (
+				744FCF6821492996004A0CBA /* ShellScript */,
+				744FCF6921492996004A0CBA /* Sources */,
+				744FCF6A21492996004A0CBA /* Frameworks */,
+				744FCF6B21492996004A0CBA /* Headers */,
+				744FCF6C21492996004A0CBA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WifiTweak;
+			productName = WifiTweak;
+			productReference = 744FCF6E21492996004A0CBA /* WifiTweak.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		744FCF6421492996004A0CBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					744FCF6D21492996004A0CBA = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 744FCF6721492996004A0CBA /* Build configuration list for PBXProject "WifiTweak" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 744FCF6321492996004A0CBA;
+			productRefGroup = 744FCF6F21492996004A0CBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				744FCF6D21492996004A0CBA /* WifiTweak */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		744FCF6821492996004A0CBA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+		744FCF6C21492996004A0CBA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		744FCF6921492996004A0CBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				744FCF8C21493273004A0CBA /* Reachability.m in Sources */,
+				744FCF7F21492997004A0CBA /* WifiTweak.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		744FCF8421492997004A0CBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"WifiTweak\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		744FCF8521492997004A0CBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"WifiTweak\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		744FCF8721492997004A0CBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A44745G78F;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WifiTweak/WifiTweak-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = localhost;
+				MonkeyDevDevicePassword = alpine;
+				MonkeyDevDevicePort = 2222;
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		744FCF8821492997004A0CBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A44745G78F;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WifiTweak/WifiTweak-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = localhost;
+				MonkeyDevDevicePassword = alpine;
+				MonkeyDevDevicePort = 2222;
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		744FCF6721492996004A0CBA /* Build configuration list for PBXProject "WifiTweak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				744FCF8421492997004A0CBA /* Release */,
+				744FCF8521492997004A0CBA /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		744FCF8621492997004A0CBA /* Build configuration list for PBXNativeTarget "WifiTweak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				744FCF8721492997004A0CBA /* Release */,
+				744FCF8821492997004A0CBA /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 744FCF6421492996004A0CBA /* Project object */;
+}
